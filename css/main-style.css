@@ -1,0 +1,839 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;600;800&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+input {
+    outline: none;
+}
+
+input:focus {
+    box-shadow: none !important;
+    outline: none;
+}
+
+
+.wrapperForm {
+    height: 100vh;
+}
+
+.wrapperForm .frameBg {
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(180deg, #F35378 0%, #9567E7 100%);
+}
+
+.wrapperForm .frameBg .form-header {
+    padding-top: 18rem;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 70px;
+    line-height: 50px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+}
+
+.wrapperForm .frameBg img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.wrapperForm form .form-top-txt {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 143.5%;
+    color: #000000;
+}
+
+.wrapperForm form .form-top-note {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    color: #000000;
+}
+
+.wrapperForm form .form-group label {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #181818;
+}
+
+.wrapperForm form .form-group input {
+    background: #FFFFFF;
+    border: 1px solid #CDD2E1;
+    border-radius: 4px;
+}
+
+.wrapperForm form .form-group input.passwordInp::after {
+    content: "\f140";
+    font-size: 24px;
+    position: absolute;
+}
+
+.wrapperForm form .form-group input[type="checkbox"] {
+    accent-color: #27A850;
+    height: 15px;
+    width: 15px;
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+}
+
+.wrapperForm form .form-group input::placeholder {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    color: #9A9999;
+}
+
+.wrapperForm form .form-group .forgot-btn {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: purple;
+}
+
+.wrapperForm .btn-submit {
+    background: #bd40bd;
+    border-radius: 4px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    color: #F4F5F9;
+}
+
+/* ------------Create Account---------- */
+
+.wrapperForm.createAccount .createAccountForm {
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+.wrapperForm.createAccount .createAccountForm input[type="radio"] {
+    accent-color: #FF516B;
+    width: 20px;
+    height: 20px;
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+}
+
+.wrapperForm .lastNote {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #000000;
+}
+
+.wrapperForm .lastNote a {
+    color: purple;
+}
+
+/* ---------------- */
+.wrapperForm.securityForm .securityFormMain .form-group input {
+    box-sizing: border-box;
+    width: 73px;
+    text-align: center;
+    font-size: 45px;
+    height: 73px;
+    background: #FFFFFF;
+    border: 1.92105px solid #B2BCCA;
+    border-radius: 7.68421px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+/* ---------------- */
+.profileCont.wrapperForm {
+    height: 100%;
+    overflow: visible;
+}
+
+.profileCont.wrapperForm .top-nav-profile a {
+    color: #000;
+    font-size: 24px;
+}
+
+.floatingLabelCont form .form-group label {
+    position: absolute !important;
+    top: -9px;
+    left: 22px;
+    background-color: #fff;
+    padding: 0 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    color: #828282;
+}
+
+.floatingLabelCont form .form-group input::placeholder {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    color: #4F4F4F;
+
+}
+
+/* ---------------- */
+.smallScreenChat {
+    display: none;
+}
+
+.chatCont .inner img {
+    border-radius: 50%;
+    width: 46px;
+    height: 46px;
+    object-fit: cover;
+}
+
+.chatCont .nav .active,
+.chatCont .inner:hover {
+    background: #dfdfdf;
+}
+
+
+.chatCont .nav .active .msgTxt .name,
+.chatCont .nav .active .msgTxt .msg,
+.chatCont .nav .active .dateTxt .msgTime,
+.chatCont .inner:hover .msgTxt .name,
+.chatCont .inner:hover .msgTxt .msg,
+.chatCont .inner:hover .dateTxt .msgTime {
+    font-weight: bold;
+    color: #000;
+}
+
+.chatCont .tab-content img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+.chatLarge.chatCont {
+    border: 1px solid #EFEEEB;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.07);
+    border-radius: 12px;
+}
+
+.chatCont .tab-content .mainChat {
+    border: 1px solid #E5E5E5;
+    border-radius: 0px;
+}
+
+.chatCont .tab-content .chatName {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #181818;
+}
+
+.chatLarge .chatLists {
+    height: 80vh;
+    overflow-y: scroll;
+}
+
+.chatCont .tab-content .chats {
+    height: 72vh;
+    overflow: hidden;
+}
+
+.chatCont .tab-content .chats .meMsg {
+    height: 63vh;
+    overflow-y: scroll;
+}
+
+.chatCont .tab-content .chats .writeMsgBox {
+    position: static;
+}
+
+.chatCont .tab-content .moredets {
+    flex-wrap: wrap;
+}
+
+.chatCont .tab-content .moredets a {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    background: linear-gradient(90deg, #FF293B 2.22%, #FF7B50 96.67%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent
+}
+
+#content-wrapper .dropdown-menu .dropdown-item {
+    color: purple !important;
+}
+
+#content-wrapper .dropdown-menu .dropdown-item:hover,
+.chatCont .tab-content .moredets a:hover {
+    text-decoration: purple underline !important;
+}
+
+.chatCont .tab-content .moredets p {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    color: #707070;
+}
+
+.chatCont .inner .msgTxt .name {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11.4872px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    color: #707070;
+
+}
+
+.chatCont .inner .msgTxt .msg {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 9.84615px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    color: #707070;
+}
+
+.chatCont .inner .dateTxt .msgTime {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 9.84615px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    color: #707070;
+}
+
+.chatCont .searchBox {
+    background: #FFFFFF;
+    border: 0.820513px solid #DEDDDD;
+    border-radius: 30.359px;
+}
+
+.chatCont .top-nav-chat {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14.7541px;
+    line-height: 19px;
+    color: #181818;
+}
+
+.chatCont .inner .dateTxt .prior {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    color: #FFFFFF;
+}
+
+.chatCont .inner .dateTxt .prior.one {
+    padding: 0 8px;
+    background: #D90000;
+    opacity: 1;
+}
+
+.chatCont .inner .dateTxt .prior.two {
+    padding: 0 8px;
+    background: #00B860;
+    opacity: 1;
+}
+
+.chatCont .inner .dateTxt .prior.three {
+    padding: 0 8px;
+    background: #0049B6;
+    opacity: 1;
+}
+
+/* ---------------- */
+.mainChat .chatHeader {
+    background: #FFFFFF;
+    box-shadow: 0px 0.468121px 4.68121px rgba(0, 0, 0, 0.07);
+    border-radius: 0px;
+}
+
+.mainChat .user img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.mainChat .user .chatName {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 9px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    color: #181818;
+}
+
+.mainChat .user .activeTime {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 7px;
+    display: flex;
+    align-items: center;
+    color: #707070;
+}
+
+.mainChat .dropdown-toggle::after {
+    display: none !important;
+}
+
+.mainChat .chats .topTime {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 5.61745px;
+    line-height: 10px;
+    display: flex;
+    align-items: center;
+    color: #707070;
+}
+
+.mainChat .chats .topTime hr {
+    width: 40%;
+}
+
+.mainChat .chats .receivedMsg span .msgOuter {
+    background: #9e2d9e;
+    border-radius: 0px 2.80872px 2.80872px 2.80872px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    color: #FFFFFF;
+    padding: 10px;
+}
+
+.mainChat .chats .sentMsg span .msgOuter {
+    background: #d9d9d9;
+    border: 0.468121px solid #E9E9E9;
+    border-radius: 2.80872px 0px 2.80872px 2.80872px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #515151;
+    padding: 10px;
+}
+
+.mainChat .chats .receivedMsg img,
+.mainChat .chats .sentMsg img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.mainChat .chats .dayTime {
+    font-size: 8px;
+    font-family: 'Inter', sans-serif;
+    color: #707070;
+    margin: 4px;
+}
+
+.mainChat .writeMsgBox {
+    border-top: 1px solid rgba(112, 124, 151, 0.15);
+    position: fixed;
+    bottom: 0;
+    right: 1%;
+    left: 1%;
+    width: 98%;
+    background-color: #ffffff !important;
+}
+
+.mainChat .writeMsgBox input {
+    width: 300px;
+}
+
+.mainChat .writeMsgBox a i {
+    font-size: 16px;
+    color: #707070;
+    margin: auto 8px !important;
+}
+
+.chatLists .searchBox .create i,
+.mainChat .writeMsgBox a i.fab.fa-telegram-plane.fa-2x {
+    font-size: 22px;
+    background: linear-gradient(90deg, #FF293B 2.22%, #FF7B50 96.67%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 24px;
+    transition: .2s;
+    text-fill-color: transparent;
+
+}
+
+.chatLists .searchBox .create i:hover,
+.mainChat .writeMsgBox a i.fab.fa-telegram-plane.fa-2x:hover {
+    transition: .2s;
+    scale: 1.1;
+
+}
+
+.tab-content .writeMsgBox {
+    width: 100%;
+}
+
+.tab-content .writeMsgBox .box {
+    width: 100% !important;
+    padding: 8px !important;
+}
+
+/* --------------------- */
+.announceSec .secHeading .mainHeading {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 38px;
+    color: #181818;
+}
+
+.announceSec .secHeading .topAll {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    color: #707070;
+}
+
+.announceSec .sort .sortDet {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    color: #181818;
+}
+
+.announceSec .sort .dropdown .dropdown-item {
+    border: none;
+    text-align: left;
+}
+
+.announceSec .sort .dropdown a {
+    border: 1px solid #E1E1E1;
+    border-radius: 4px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #707070;
+    padding: 3px 5px !important;
+}
+
+.announceSec .table thead {
+    background: #F0F0F0;
+    border: none !important;
+}
+
+.announceSec .table .dull_bg {
+    background: #F9F9F9;
+}
+
+.announceSec .table tbody tr {
+    border-bottom: transparent 1px solid;
+}
+
+.announceSec .table tbody tr a {
+    color: #707070;
+}
+
+.announceSec .table tbody tr:hover {
+    background: #f4f4f4;
+    border-bottom: silver 1px solid;
+}
+
+.announceSec .table thead th {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    color: #707070;
+}
+
+.announceSec .table thead th,
+.announceSec .table tr td {
+    text-align: center;
+}
+
+.announceSec .table thead th:nth-child(1),
+.announceSec .table tr td:nth-child(1) {
+    text-align: left;
+}
+
+.announceSec .table tbody tr td img {
+    width: 33.11px;
+    height: 33.11px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.announceSec .table tbody tr td {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    border: none !important;
+    color: #181818;
+}
+
+.announceSec .table tbody tr td a {
+    font-weight: bold;
+    color: purple;
+}
+
+.announceSec .table tbody tr td span.record {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    text-align: center;
+    color: #FF516B;
+    background: rgba(255, 81, 107, 0.15);
+    border-radius: 4px;
+    padding: 2px 6px;
+}
+
+.announceSec .table tbody tr td span.live {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    text-align: center;
+    color: #27C85A;
+    background: rgba(39, 200, 90, 0.15);
+    border-radius: 4px;
+    padding: 2px 6px;
+}
+
+.announceSec .dropdown-toggle::after {
+    display: none;
+}
+
+.announceSec .dropdown a {
+    color: #707070;
+}
+
+.announceSec .pagination .page-link {
+    background: #FFFFFF;
+    border: 1px solid #E1E1E1 !important;
+    border-radius: 4px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #181818;
+    margin: auto 4px !important;
+}
+
+.announceSec .pagination .page-item.active .page-link {
+    border: 1px solid #ff516b !important;
+    height: auto !important;
+
+}
+
+/* --------------------- */
+@media screen and (max-width:1140px) {
+    .chatCont .tab-content .moredets h4 {
+        font-size: 12px;
+    }
+
+    .chatCont .tab-content .moredets p {
+        font-size: 10px;
+    }
+
+    .chatCont .tab-content .moredets {
+        margin: auto 4px !important;
+    }
+}
+
+@media screen and (max-width:1040px) {
+    .wrapperForm.securityForm .securityFormMain .form-group input {
+        font-size: 30px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .chatCont .tab-content .moredets h4 {
+        font-size: 10px;
+    }
+
+    .chatCont .tab-content .moredets p {
+        font-size: 8px;
+    }
+
+    .chatCont .tab-content .moredets {
+        margin: auto 0px !important;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .wrapperForm .frameBg .form-header {
+        font-size: 39.3853px;
+        line-height: 28px;
+        text-align: center;
+        letter-spacing: 0.05em;
+    }
+
+    .wrapperForm {
+        height: 100% !important;
+    }
+
+    .wrapperForm .frameBg {
+        height: 251px !important;
+    }
+
+    .wrapperForm .frameBg .form-header {
+        padding-top: 3.5rem;
+        font-size: 39.3853px;
+        line-height: 28px;
+    }
+
+    .wrapperForm .frameBg img {
+        width: 25%;
+    }
+
+    /* -------- */
+    .wrapperForm.createAccount .createAccountForm {
+        overflow-y: visible !important;
+        height: 100% !important;
+    }
+
+    /* ----------------- */
+    .wrapperForm.securityForm .securityFormMain .form-group input {
+        font-size: 30px;
+        width: 41px;
+        height: 41px;
+    }
+
+    /* ------------ */
+    .smallScreenChat {
+        display: block !important;
+    }
+
+    /* -------- */
+    .chatLarge.chatCont {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .mainChat .writeMsgBox {
+        margin-right: 35px !important;
+        justify-content: end !important;
+    }
+
+    .mainChat .writeMsgBox input {
+        width: 200px !important;
+    }
+
+    /* Announce Table */
+    .announceSec .table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .announceSec .table thead th {
+        font-weight: 500 !important;
+        font-size: 10px !important;
+    }
+
+    .announceSec .table tr td {
+        padding: .3rem !important;
+        font-weight: 400 !important;
+        font-size: 10px !important;
+    }
+
+    .announceSec .table tbody tr td span.record,
+    .announceSec .table tbody tr td span.live {
+        padding: 1px 3px !important;
+        font-weight: 500 !important;
+        font-size: 10px !important;
+    }
+
+    .announceSec .table tbody tr td img {
+        width: 14px !important;
+        height: 14px !important;
+    }
+}
